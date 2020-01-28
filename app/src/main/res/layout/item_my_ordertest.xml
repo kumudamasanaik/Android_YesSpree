@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_80"
+    android:layout_margin="@dimen/dimens_5">
+
+    <TextView
+        android:id="@+id/tv_placed_on_text"
+        style="@style/order_list_item_text"
+        android:text="@string/placed_on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_placed_on_date"
+        style="@style/order_item_text_val"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_placed_on_text"
+        app:layout_constraintStart_toEndOf="@+id/tv_placed_on_text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="31-March-2018" />
+
+    <TextView
+        android:id="@+id/tv_order_id"
+        style="@style/order_item_text_val"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_order_id_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="65321405470" />
+
+    <TextView
+        android:id="@+id/tv_order_id_text"
+        style="@style/order_list_item_text"
+        android:text="@string/order_id"
+        app:layout_constraintEnd_toStartOf="@+id/tv_order_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_prod_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:maxLines="1"
+        android:textColor="@color/colore666666"
+        android:textSize="@dimen/dimens_11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Quantity : 3" />
+
+    <ImageView
+        android:id="@+id/iv_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_go_arrow" />
+
+    <TextView
+        android:id="@+id/tv_status_text"
+        style="@style/order_list_item_text"
+        android:text="@string/status"
+        android:textColor="@color/app_text_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_status"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_placed_on_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        style="@style/order_item_text_val"
+        android:layout_marginTop="168dp"
+        android:textColor="@color/pickup"
+        android:textSize="@dimen/dimens_11sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_status_text"
+        app:layout_constraintStart_toEndOf="@+id/tv_status_text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="31-02-2018" />
+
+    <TextView
+        android:id="@+id/tv_est_delivery_text"
+        style="@style/order_list_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="@string/est_del"
+        android:textColor="@color/app_text_black"
+        android:textSize="@dimen/dimens_9sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_est_delivery"
+        style="@style/order_item_text_val"
+        android:textSize="@dimen/dimens_9sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_est_delivery_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_est_delivery_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_id"
+        tools:text="31-01-2018" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/grey_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/minus_dimens_2"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:padding="5dp"
+        android:text="@string/cancel"
+        android:textAlignment="center"
+        android:textColor="@color/md_red_900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

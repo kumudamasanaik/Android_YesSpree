@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_person_prefix"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <RadioGroup
+        android:id="@+id/rdbg_person_pref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rdbt_mr"
+            style="@style/person_cbk"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/pref_mr" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rdbt_mrs"
+            style="@style/person_cbk"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/pref_mrs" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rdbt_miss"
+            style="@style/person_cbk"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/pref_miss" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rdbt_ms"
+            style="@style/person_cbk"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/pref_ms" />
+    </RadioGroup>
+</LinearLayout>

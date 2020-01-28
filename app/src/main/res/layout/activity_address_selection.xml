@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yesspree.app.customviews.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/multistateview"
+    style="@style/MultiStateViewStyle"
+    android:background="@color/colorf2f2f2"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_checkout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_add_new_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_40"
+                    android:layout_gravity="center"
+                   android:background="@color/md_white_1000"
+                    android:drawableLeft="@drawable/ic_add"
+                    android:drawablePadding="@dimen/dimens_15"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="left|center"
+                    android:lineSpacingExtra="@dimen/dimens_4sp"
+                    android:padding="@dimen/dimens_5"
+                    android:text="@string/add_new_address"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dimens_12sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/view_header_delivery_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_40"
+                    android:background="@color/colorf2f2f2"
+                    android:padding="@dimen/dimens_5">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/dimens_5"
+                        android:gravity="left|center"
+                        android:lineSpacingExtra="@dimen/dimens_5sp"
+                        android:padding="@dimen/dimens_5"
+                        android:text="@string/delivery_address"
+                        android:textColor="@color/colorfafafa"
+                        android:textSize="@dimen/dimens_12sp" />
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimens_8"
+                        android:layout_height="@dimen/dimens_8"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/dimens_20"
+                        android:gravity="left|center"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/ic_more" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/address_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/tv_checkout"
+            style="@style/btn_check_out_style"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/continue_text"
+            android:textSize="@dimen/dimens_12sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</com.yesspree.app.customviews.MultiStateView>

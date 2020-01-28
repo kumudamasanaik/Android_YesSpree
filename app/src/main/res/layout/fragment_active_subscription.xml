@@ -1,0 +1,34 @@
+<com.yesspree.app.customviews.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multistateview"
+    style="@style/MultiStateViewStyle"
+    android:background="@color/app_text_white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_active_subscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_regular"
+            android:lineSpacingExtra="@dimen/dimens_2sp"
+            android:padding="@dimen/dimens_10"
+            android:text="@string/total_active_subscriptions"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dimens_10sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_subscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_subscrib">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</com.yesspree.app.customviews.MultiStateView>

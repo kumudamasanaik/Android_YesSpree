@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_5"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_parentName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_50"
+            android:text="@string/rate_us_query"
+            android:gravity="left|center"
+            android:fontFamily="@font/open_sans_regular"
+            android:lineSpacingExtra="@dimen/dimens_4sp"
+            android:drawableRight="@drawable/ic_expand_more_down"
+            android:textSize="@dimen/dimens_12sp"
+            android:padding="@dimen/dimens_10"/>
+
+        <LinearLayout
+            android:id="@+id/ll_child_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

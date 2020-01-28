@@ -1,0 +1,469 @@
+<resources>
+    <string name="app_name">Yesspree</string>
+
+    <!--facebook-->
+    <string name="facebook_app_id">211463156112817</string>
+    <string name="fb_login_protocol_scheme">fb211463156112817</string>
+
+    <string name="pref_mr">Mr.</string>
+    <string name="pref_mrs">Mrs.</string>
+    <string name="pref_miss">Miss.</string>
+    <string name="pref_ms">M/S</string>
+    <string name="first_name">First Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="conf_password">Confirm Password</string>
+    <string name="referal_code_opt">Referral Code (Optional)</string>
+    <string name="you_are_already_sign">You already have an account? Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="please_wait">Please Wait..</string>
+    <string name="cancel_order_dialog_title">Cancel Order</string>
+    <string name="cancel_order_confirm">Are you sure want to cancel order?</string>
+
+    <!-- Real Time Permission -->
+    <string name="access_your_location">Access your Location</string>
+    <string name="access_location_msg">Allow us to access your location while you see the application?</string>
+    <string name="access_storage_msg">Allow us to access your storage while you see the application?</string>
+    <string name="access_sms_msg">Allow us to read SMS to verify OTP.</string>
+
+    <!--drawer menu title-->
+    <string-array name="nav_list">
+        <item>@string/no_address</item>
+        <item>@string/my_address</item>
+        <item>@string/my_orders</item>
+        <item>@string/my_cart</item>
+        <item>@string/my_subscription</item>
+        <item>@string/language</item>
+        <item>@string/shop_by_cat</item>
+        <item>@string/offers</item>
+        <item>@string/refer_and_save_more</item>
+        <item>@string/rate_us</item>
+        <item>@string/share</item>
+        <item>@string/about_us</item>
+        <item>@string/customer_care</item>
+        <item>@string/notification</item>
+        <item>@string/faq</item>
+        <item>@string/logout</item>
+        <item>@string/about_release</item>
+    </string-array>
+
+    <!--drawer menu icon-->
+    <integer-array name="nav_icon">
+        <item>@drawable/ic_slider_map_pin</item>
+        <item>@drawable/ic_slider_my_address</item>
+        <item>@drawable/ic_slider_my_orders</item>
+        <item>@drawable/ic_slider_my_cart</item>
+        <item>@drawable/ic_slider_my_subscription</item>
+        <item>@drawable/ic_slider_languages</item>
+        <item>@drawable/ic_slider_shop_by_category</item>
+        <item>@drawable/ic_slider_offers</item>
+        <item>@drawable/ic_slider_refer</item>
+        <item>@drawable/ic_slider_rate_us</item>
+        <item>@drawable/ic_slider_share</item>
+        <item>@drawable/ic_slider_about_us</item>
+        <item>@drawable/ic_slider_help</item>
+        <item>@drawable/ic_slider_notifications</item>
+        <item>@drawable/ic_slider_faq</item>
+        <item>@drawable/ic_slider_logout</item>
+        <item>@drawable/ic_slider_about_release</item>
+    </integer-array>
+
+
+    <!--Week days-->
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+
+    <string-array name="week_days">
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/Thu</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+        <item>@string/sunday</item>
+    </string-array>
+
+    <!--error-->
+    <string name="error_no_internet">Please check your internet connection!</string>
+    <string name="error_empty_result">Whoops! We didn\'t find anything here.</string>
+    <string name="error_something_wrong">Whoops! Something went wrong here.</string>
+    <string name="err_firstname">First Name should not be empty</string>
+    <string name="err_lastname">Last Name should not be empty</string>
+    <string name="err_emailId">Email ID should not be empty</string>
+    <string name="err_mobile_no">Mobile Number should not be empty</string>
+    <string name="err_password">Password should not be empty</string>
+    <string name="err_conf_pass">Confirm Password should not be empty</string>
+    <string name="err_conf_pass_match">Confirm Password should match with Password</string>
+    <string name="error_incorrect_otp">This OTP you entered is incorrect.</string>
+    <string name="sign_up_success">Sighup successfully</string>
+    <string name="err_emailId_invalid">Invalid Email Id</string>
+    <string name="err_sel_per_pref">Please check any prefix</string>
+    <string name="existing_user">Existing User.</string>
+    <string name="user_is_alreay_existed">This mobile number is already in use</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="otp_sent_msg">We have sent an OTP to your registered Mobile number. Please enter OTP.</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="continue_text">Continue</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="no_data_found">No data found</string>
+    <string name="err_otp_empty">OTP shouldnot be empty</string>
+    <string name="err_mobile_not_found">Mobile number not found</string>
+    <string name="otp_success">OTP Verified Successfully.</string>
+    <string name="read_sms">Read SMS Access</string>
+    <string name="dont_allow">Don\'t Allow</string>
+    <string name="allow">Allow</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_fb">Sign in with Facebook</string>
+    <string name="already_have_account">Already have account? Sign In</string>
+    <string name="skip">Skip</string>
+    <string name="you_dont_have_acc">You don’t have an account? Sign Up</string>
+    <string name="email_or_mobile_no">Email ID / Mobile Number</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">OR</string>
+    <string name="err_email_id_mobile">EmailId or mobile number shoudlnot be empty</string>
+    <string name="forgot_Password">Forgot Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="please_enter_new_pass">Please enter New Password and Confirm Password to Reset your Password.</string>
+    <string name="done">Done</string>
+    <string name="new_pass">New Password</string>
+    <string name="err_user_not_found">User Not Found. Please try again</string>
+    <string name="name">Name</string>
+    <string name="flate_house">Flat/House/Office No</string>
+    <string name="street_name">Street Name</string>
+    <string name="village_city">Village / City</string>
+    <string name="taluka">Taluka</string>
+    <string name="district">District</string>
+    <string name="state">State</string>
+    <string name="pincode">Pincode</string>
+    <string name="locality_landmark">Locality / Landmark</string>
+    <string name="address_type">Address Type</string>
+    <string name="home">Home</string>
+    <string name="office">Office</string>
+    <string name="login_to_wishlist">Please login to add item to your shopping List.</string>
+    <string name="valid_dob">please select valid date of birth</string>
+
+    <string name="error_empty_offerlist">offer list is empty</string>
+    <!--navigation items-->
+    <string name="login">Login</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="paresh_kumar">Pareshkumar Patel</string>
+    <string name="no_address">Please add address</string>
+    <string name="my_address">My Addresses</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_subscription">My Subscription</string>
+    <string name="shop_by_cat">Shop By Categories</string>
+    <string name="offers">Offers</string>
+    <string name="refer_and_save_more">Refer and Save more</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share">Share</string>
+    <string name="about_us">About Us</string>
+    <string name="customer_care">Customer Care</string>
+    <string name="notification">Notifications</string>
+    <string name="logout">Logout</string>
+    <string name="faq">FAQ</string>
+    <string name="about_release">About This Release</string>
+    <string name="category">Category</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="account">Account</string>
+    <string name="no_city">City</string>
+
+    <string name="refresh">Refresh</string>
+    <string name="no_result_found">No Result Found !!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!--product catgory list -->
+    <string name="product_item_name">Aashirvaad Whole Wheat Atta -100% Pure  </string>
+    <string name="product_item_weight"> 0kg </string>
+    <string name="product_deiscount_price_text"> </string>
+    <string name="product_item_offer_price">  250 </string>
+
+    <string name="product_item_saved_price">  250 </string>
+    <string name="product_item_add">  ADD </string>
+    <string name="product_item_plus_icon">  + </string>
+    <string name="product_item_wieght"> 10kg </string>
+    <string name="product_original_price_text">  </string>
+    <string name="Rs">\u20B9 </string>
+    <string name="RsSybol">\u20B9</string>
+
+    <!--product detail screen-->
+
+    <string name="google_place_api_key">AIzaSyCvCpeA2b-sGhnlYbbB67GhNohHIRaXRSs</string>
+    <string name="product_select"> Select </string>
+    <string name="product_deducted"> Deducted </string>
+    <string name="product_total"> Total </string>
+    <string name="product_add_wish_list">Add to wishlist</string>
+    <string name="product_remove_wish_list">Remove to wishlist</string>
+    <string name="product_discription">Made from the choicest grains, Aashirvaad Whole Wheat Atta is 100% sampoorna atta with zero maida, grounded carefully using gfgrtgdfgfgefdhgfgbfsdvdgfgbfgvfdfergnhgm,grgfghyj,hfgfjnukjhgdfggjmjnfdbfgnh"
+              </string>
+    <string name="product_read_all"> Read All </string>
+    <string name="product_similar_product"> Similar Products </string>
+    <string name="last_minute_buys"> Last Minute Buys </string>
+    <string name="explore"> Explore </string>
+    <string name="you_may_also_like"> you may also like </string>
+    <string name="go_to_cart"> GO to Cart </string>
+
+    <!-- delievery location-->
+    <string name="delievery_location_selection">Please choose your delivery location.</string>
+    <string name="delievery_location">Delivery Location</string>
+    <string name="use_my_location">Use My Location </string>
+    <string name="set_location_manually">Set Location Manually</string>
+
+    <!--refferal related UI elements-->
+    <string name="invite_friend">Invite a Friend</string>
+    <string name="friend_signup">Friend Signup </string>
+    <string name="get_cashback">Get Cashback</string>
+    <string name="your_referral_code">Your Referral Code</string>
+    <string name="your_referral_link">Your Referral Link</string>
+    <string name="referral_link"> <u>Get Referral Link</u></string>
+    <string name="referral_code"> <u>Get Referral code</u></string>
+    <string name="share_via"> Share Via</string>
+
+
+    <!--payment confirmation UI -->
+    <string name="total_mrp"> Total MRP</string>
+    <string name="your_total_saving"> Your Total Savings </string>
+    <string name="price"> \u20B9 0</string>
+    <string name="saved_price"> \u20B9 0 (25%)</string>
+    <string name="total_pay"> Total to Pay</string>
+    <string name="promecode_offers"> Promo Code &amp; Offers</string>
+    <string name="choose_payment_method"> Choose Payment Method</string>
+    <string name="wallet"> Wallet</string>
+    <string name="debit_card"> Debit/ Credit Card</string>
+    <string name="net_banking"> Net Banking </string>
+    <string name="cash_on_delivery"> Cash On Delivery </string>
+    <string name="payment"> Payment</string>
+
+
+    <!--order confirmation-->
+
+    <string name="product_details">  Product Details (%1$d Items)</string>
+    <string name="save_more">Save ₹%1$d more</string>
+    <string name="city"> city </string>
+    <string name="locality"> locality </string>
+    <string name="address"> Address </string>
+    <string name="Name"> Name </string>
+    <string name="delivery_address"> Delivery Address </string>
+    <string name="check_out"> checkout </string>
+    <string name="dateof_birth"> Date Of Birth </string>
+    <string name="save"> Save </string>
+    <string name="you_save">You Save </string>
+    <string name="welcome_messages">Hello, %1$s! You have %2$d new messages.</string>
+    <string name="err_social_login">Something went wrong with social sign in!</string>
+    <string name="recomded_prod">Recommended Products</string>
+    <string name="view_all">View all</string>
+    <string name="order_now">Order now</string>
+    <string name="add_new_address"> Add New Address </string>
+    <string name="order_confirmation"> Order Confirmation </string>
+    <string name="product_details_header">  Product Details </string>
+
+    <string name="shop_by_brands">SHOP BY BRANDS</string>
+    <!--filter Screen-->
+    <string name="filtered_name"> item name </string>
+    <string name="filterd_cat_name"> Cat Name </string>
+    <string name="filterd_clear_all"> Clear All </string>
+    <string name="filterd_vailible_products">125 Availible Products </string>
+    <string name="filterd_done"> Done </string>
+    <string name="filterd_search_here"> Search products here </string>
+    <string name="filter"> Filter </string>
+
+
+    <!--subscribe screen -->
+
+    <string name="subscribe_schedule"> Schedule </string>
+    <string name="subscribe"> Subscribe </string>
+    <string name="subscribe_save_more"> Save more </string>
+
+    <string name="Mon">Mon</string>
+    <string name="Tue">Tue</string>
+    <string name="Wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+    <string name="Sun">Sun</string>
+
+    <string name="every_day">EveryDay</string>
+    <string name="alternate_days">Alternate days</string>
+    <string name="once_week">Once a week</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel_plan"> <u>Cancel plan</u></string>
+    <string name="rate_us_query">How did you like shopping with Yesspree?</string>
+
+    <!--rate us screen -->
+
+    <string name="happy"> Happy </string>
+    <string name="good"> Good </string>
+    <string name="not_good"> Not Good </string>
+    <string name="feedback"> Feedback </string>
+    <string name="comment_query_hint"> Your valuable feedback will help us to improve our service.(Optional) </string>
+    <string name="submit"> Submit </string>
+
+
+    <!-- quantity selection popup[ screen-->
+    <!-- quantity selection screen-->
+
+    <string name="select_quantity">  Select Quantity for </string>
+    <!-- subscription popup selection screen-->
+    <string name="subscribe_and_save_more">  Subscribe and save More  </string>
+    <string name="get_once_at"> Get Once @ </string>
+    <string name="get_once"> Get Once </string>
+
+
+    <!--my order-->
+    <string name="placed_on">Placed On : </string>
+    <string name="order_id">order Id : </string>
+    <string name="status">Status : </string>
+    <string name="est_del">Estimated Delivery : </string>
+
+
+    <!--product list screen -->
+    <string name="trending"> Trending \n upto 60% </string>
+    <string name="best_prices"> Best Prices \n upto 80% </string>
+
+    <!--sub sub category screen-->
+
+    <string name="top_products"> Top Products </string>
+    <string name="top_grocery_products"> All Grocery Products </string>
+
+    <!--offers details screen -->
+
+    <string name="offer_details">Offer Details</string>
+
+    <string name="terms_condition">Terms &amp; Conditions</string>
+    <string name="all">All</string>
+    <string name="products">Products</string>
+    <string name="empty_place_holder_msg"> Empty List </string>
+
+    <string name="product_read_less"> Read Less </string>
+
+    <string name="aboutus_query">  Motivation can be simply defined as the things that induce us to take certain actions or behave in a certain way. It is the why or the reason that drives a person towards a desired goal.
+The reasons can be categorized into something that is within us iProductListFragmentView.e. intrinsic / internal motivation, or something that is external to us iProductListFragmentView.e. extrinsic / external motivation.
+Internal motivation in performing a task occurs when the task in itself is experienced as rewarding and there is no need for any external reward before it is performed. Examples are love of the task, self-satisfaction, sense of achievement, relaxation purpose, etc.
+External motivation in performing a task occurs when the task is performed because of an external reward. Examples are praise, recognition, money, stickers, grades, material rewards, etc.
+Motivation can be seen as a continuum from being externally driven to becoming more internally driven. All of us start off in life being externally driven. Remember how many children are bribed with sweets or stickers, and do things to get praise from adults. But as we mature and our material needs become more satisfied, we become more internally driven. Though intrinsic motivation is generally accepted as being better as it is within the internal control of the person, external motivation is useful in helping a person initially to get on a task when he does not feel intrinsically motivated to do so.
+However, the excessive use of external motivation might have detrimental effects. This has been shown in research or experiments that examine the effects of external reward on an internally motivated task."</string>
+    <string name="login_to_add_to_cart">Please login to modify cart</string>
+    <string name="cannot_add_items_out_of_stock">You cannot add more than stock items.</string>
+    <string name="should_be_minimum_quantity">There should be minimum %1$d quantity for this size.</string>
+    <string name="err_login_cart">Please login to view</string>
+    <string name="err_empty_cart">Your shopping cart is empty</string>
+    <string name="add_some_prod_to_cart">Add some products to cart</string>
+    <string name="click_back_exit">Please click back again to exit</string>
+    <string name="no_geocoder_available">No geocoder available</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="address_found">Address found</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for location functionality.</string>
+    <string name="settings">Settings</string>
+    <!-- address validation -->
+    <string name="error_user_not_login">Please login </string>
+
+    <string name="msg_enter_valid_name">Please enter a valid Name.</string>
+    <string name="msg_enter_valid_email">Please enter a valid Email.</string>
+    <string name="msg_enter_valid_mobile">Please enter a valid Mobile Number.</string>
+    <string name="msg_enter_valid_address">Please enter a valid Address.</string>
+    <string name="msg_enter_valid_city">Please enter a valid City.</string>
+    <string name="msg_enter_valid_dist">Please enter a valid Dist.</string>
+    <string name="msg_enter_valid_tq">Please enter a valid Tq.</string>
+    <string name="msg_enter_valid_state">Please enter a valid State.</string>
+    <string name="msg_enter_valid_pincode">Please enter a valid Pincode.</string>
+    <string name="msg_enter_valid_landmark">Please enter a valid Landmark.</string>
+    <string name="address_added_successfully">Address added successfully</string>
+    <string name="address_updated_successfully">Address updated successfully</string>
+
+    <string name="dialog_header"> Delete Address </string>
+    <string name="dialog_body"> Are you sure you want to delete this address?</string>
+    <string name="err_key">Not a valid Key</string>
+    <string name="err_session">Not a valid Session</string>
+    <string name="err_pincode">Not a valid Pincode</string>
+    <string name="no_product_checkout">There is no products to checkout</string>
+    <string name="no_address_add_address">No address found please add new address</string>
+    <string name="qty">Qty</string>
+    <string name="btn_done">Done</string>
+    <string name="select_del_slot">Select Delivery Slot</string>
+    <string name="delivery_date_dummy">12 Mar 2016</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="err_no_sku_found">No sku data found</string>
+
+    <string name="err_empty_my_order_list">There is no %1$s order</string>
+    <string name="add_some_prod_to_my_orders">Add some  more Order </string>
+
+
+    <string name="err_empty_my_addres_list">Address List is empty</string>
+    <string name="add_some_address_"> do you want add the address </string>
+    <string name="checkout_api_error">Whoops! Something Went Wrong, Please Try Again.</string>
+    <string name="order_placed_success">Your order placed successfully.</string>
+    <string name="err_empty_wish_list"> Empty Wish List</string>
+    <string name="add_wish_list_"> do you want add the  products to wish list </string>
+    <string name="unable_to_remove_cart">Unable to remove from cart</string>
+    <string name="err_product_list"> product List is empty</string>
+    <string name="remove_prod">Remove product</string>
+    <string name="remove_prod_conf">Are you sure want to remove from cart?</string>
+    <string name="err_empty_faq_list">Faq List is empty</string>
+    <string name="order_status">Order Status</string>
+    <string name="qty_text">\" Quantity : \"</string>
+    <string name="cancel">Cancel</string>
+    <string name="submited_successfully">Submitted successfully</string>
+    <string name="err_cancel_order">Something went wrong while cancelling the order please try again</string>
+    <string name="success_cancel_order">Order cancelled successfully</string>
+    <string name="err_empty_notification_list">Notification List is empty</string>
+    <string name="err_nothing_is_selected">Nothing is selected for %1$s</string>
+    <string name="refine">Refine</string>
+    <string name="sort">Sort</string>
+
+    <!-- Customer Care Screen -->
+
+    <string name="reach_for_any_query_on">REACH FOR ANY QUERY ON</string>
+    <string name="call_us_on">Call us on</string>
+    <string name="customer_care_email">customercare@yesspree.com</string>
+    <string name="customer_care_mobile">+91 80 4200 4100</string>
+    <string name="subscribe_at">Subscribe @</string>
+    <!--subscription confirmed -->
+
+    <string name="subscription_confirmed">Order Confirmed</string>
+    <string name="subscription_query">In the rare event of the  item being unavailiable what would you prefer? </string>
+    <string name="deleivery_alternate">Delivery the closest alternate</string>
+    <string name="do_not_delivery">Do not deliver</string>
+    <string name="ring">Ring</string>
+    <string name="do_not_ring">Do not Ring</string>
+    <string name="door_bell">Door Bell</string>
+    <string name="leave_bag_out">Leave bag out \n Recomended </string>
+    <string name="delivery_time">5-7.30am /n Delivery</string>
+    <string name="pls_sel_day">Please select atleast one day</string>
+    <string name="cod">COD</string>
+    <string name="online">Online</string>
+    <string name="payment_type">Payment type</string>
+    <string name="select_payment_type">Select payment type</string>
+    <string name="success_subscribe">Subscribed successfully</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="err_login_specific">Please do login to %1$s</string>
+    <string name="view">View</string>
+    <string name="subscr_custom_sel">user custom selection</string>
+    <string name="please_try_later">Please try later</string>
+    <string name="total_active_subscriptions">Total Active Subscriptions %1$d</string>
+    <string name="total_cancel_subscriptions">Total Canceled Subscriptions %1$d</string>
+    <string name="rupees_amt">\u20B9 %1$s</string>
+    <string name="rupees_amt_percent">\u20B9 %1$s  (%2$s\%%)</string>
+    <string name="saved_amt">Yov saved \u20B9 %1$s</string>
+    <string name="are_you_sure_want_cancel_subscr">Are you sure want to cancel subscription</string>
+    <string name="yes">Yes</string>
+    <string name="No">No</string>
+    <string name="enter_promocode">Enter promocode</string>
+    <string name="err_valid_coupon_code">Please enter valid coupon code</string>
+
+    <string name="search_hint">search your products here </string>
+</resources>

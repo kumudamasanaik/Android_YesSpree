@@ -1,0 +1,19 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yesspree.app.screens.aboutus.query.QueryFragment">
+
+    <TextView
+        android:id="@+id/tv_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_2"
+        android:textColor="@color/colorPrimary"
+        android:padding="@dimen/dimens_10sp"
+        android:fontFamily="@font/open_sans_regular"
+        android:textSize="@dimen/dimens_12sp"
+        />
+
+</android.support.v4.widget.NestedScrollView>

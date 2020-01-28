@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.otp.OtpActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_otp_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/logo_pic"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimens_20" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dimens_10"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:text="@string/change_password"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/dimens_15sp"
+                app:textAllCaps="true" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimens_10"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="@dimen/dimens_6sp"
+                android:text="@string/please_enter_new_pass"
+                android:textAlignment="center"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_new_pass"
+                style="@style/sign_up_edit_text"
+                android:layout_margin="@dimen/dimens_10"
+                android:hint="@string/new_pass"
+                android:imeOptions="actionDone" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_confirm_pass"
+                style="@style/sign_up_edit_text"
+                android:layout_margin="@dimen/dimens_10"
+                android:hint="@string/conf_password"
+                android:imeOptions="actionDone" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_done"
+                style="@style/sign_up_btn"
+                android:layout_margin="@dimen/dimens_10"
+                android:text="@string/done"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

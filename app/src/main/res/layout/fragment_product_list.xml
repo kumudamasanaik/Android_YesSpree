@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yesspree.app.customviews.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/multistateview"
+    style="@style/MultiStateViewStyle"
+    android:background="@color/app_text_white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/partialy_searchview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_productlist_cat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:minWidth="@dimen/dimens_30" />
+
+    </LinearLayout>
+</com.yesspree.app.customviews.MultiStateView>
+

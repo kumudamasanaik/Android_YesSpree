@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.otp.OtpActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_otp_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/logo_pic"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimens_20" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dimens_10"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:text="@string/otp_verification"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/dimens_15sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimens_10"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="@dimen/dimens_6sp"
+                android:text="@string/otp_sent_msg"
+                android:textAlignment="center"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_otp"
+                style="@style/sign_up_edit_text"
+                android:layout_margin="@dimen/dimens_10"
+                android:hint="@string/enter_otp"
+                android:imeOptions="actionDone" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_continue"
+                style="@style/sign_up_btn"
+                android:layout_margin="@dimen/dimens_10"
+                android:text="@string/continue_text" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_resend_otp"
+                style="@style/simp_btn_no_bg"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimens_10"
+                android:text="@string/resend_otp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

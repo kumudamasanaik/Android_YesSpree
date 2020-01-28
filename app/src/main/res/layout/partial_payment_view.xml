@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_cart_summery"
+    android:layout_width="match_parent"
+    android:background="@color/app_bg"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/view_payment"
+        style="@style/payment_bill_layout_style">
+
+
+        <TextView
+            style="@style/payment_view_normal_text_style"
+            android:gravity="left|center_horizontal"
+            android:text="@string/total_mrp"
+            android:textColor="@color/person_prefix"
+            android:textSize="@dimen/dimens_10sp" />
+
+
+        <TextView
+            android:id="@+id/tv_total_mrp"
+            style="@style/payment_view_normal_text_style"
+            android:layout_gravity="right|center_horizontal"
+            android:gravity="right|center_horizontal"
+            android:paddingRight="@dimen/dimens_15"
+            android:text="@string/price"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/dimens_14sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/view_saving_price"
+        style="@style/payment_bill_layout_style"
+        android:layout_below="@+id/view_payment"
+        android:layout_marginBottom="@dimen/dimens_5">
+
+
+        <TextView
+            style="@style/payment_view_normal_text_style"
+            android:gravity="left|center_horizontal"
+            android:text="@string/your_total_saving"
+            android:textColor="@color/color0d9f67"
+            android:textSize="@dimen/dimens_10sp" />
+
+
+        <TextView
+            android:id="@+id/tv_total_savings"
+            style="@style/payment_view_normal_text_style"
+            android:layout_gravity="right|center_horizontal"
+            android:gravity="right|center_horizontal"
+            android:paddingRight="@dimen/dimens_15"
+            android:text="@string/saved_price"
+            android:textColor="@color/color0d9f67"
+            android:textSize="@dimen/dimens_11sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_2"
+        android:layout_below="@+id/view_saving_price"
+        android:background="@drawable/bg_dashed_line_refferal" />
+
+    <LinearLayout
+        android:id="@+id/view_original_price"
+        style="@style/payment_bill_layout_style"
+        android:layout_below="@+id/view_saving_price"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:layout_marginTop="@dimen/dimens_5"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            style="@style/payment_view_normal_text_style"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="left|center"
+            android:text="@string/total_pay"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dimens_13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_total_pay"
+            style="@style/payment_view_normal_text_style"
+            android:layout_gravity="right|center_horizontal"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/dimens_15"
+            android:text="@string/saved_price"
+            android:textColor="#dc0000"
+            android:textSize="@dimen/dimens_15sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_seperator"
+        style="@style/product_weight_view_separator_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_0.5"
+        android:layout_below="@+id/view_original_price"
+        android:background="@color/colorc7c7c7" />
+
+
+</RelativeLayout>

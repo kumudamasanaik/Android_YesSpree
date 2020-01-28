@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_logo_icon"
+        style="@style/logo_style"
+        android:src="@drawable/logo_dark_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo_icon"
+        android:layout_marginLeft="@dimen/dimens_30"
+        android:layout_marginRight="@dimen/dimens_30"
+        android:layout_marginTop="@dimen/dimens_40"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            style="@style/sign_up_btn"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:text="@string/sign_up" />
+
+        <TextView
+            android:id="@+id/tv_gmail_sigh_up"
+            style="@style/social_sign_up_btn"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:background="@color/ornage_gmail_login_bg"
+            android:text="@string/sign_in_with_google" />
+
+        <TextView
+            android:id="@+id/tv_fb_sigh_up"
+            style="@style/social_sign_up_btn"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:background="@color/indigo_fb_login_bg"
+            android:text="@string/sign_in_with_fb"
+            android:textColor="@color/md_white_1000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signIn"
+            style="@style/already_sign_signup_text"
+            android:layout_weight="1"
+            android:background="@color/transparent_black"
+            android:text="@string/already_have_account" />
+
+        <TextView
+            android:id="@+id/tv_skip"
+            style="@style/already_sign_signup_text"
+            android:layout_gravity="end"
+            android:layout_weight="3"
+            android:background="@color/transparent_black"
+            android:text="@string/skip" />
+    </LinearLayout>
+</RelativeLayout>

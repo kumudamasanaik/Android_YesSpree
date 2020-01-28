@@ -1,0 +1,135 @@
+<com.yesspree.app.customviews.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multistateview"
+    style="@style/MultiStateViewStyle"
+    android:background="@color/app_bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/view_itm_swipable"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_165"
+            android:background="@drawable/bg_white_drwble"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_banner_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/main_banner_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:centered="true"
+                app:fillColor="@color/yellow"
+                app:pageColor="@color/app_text_white"
+                app:snap="false" />
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            style="@style/customTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_40"
+            android:background="@drawable/bg_tab_selector"
+            android:elevation="@dimen/dimens_2"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorHeight="@dimen/dimens_3"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@color/person_prefix" />
+
+
+        <com.yesspree.app.customviews.MyViewPager
+            android:id="@+id/filter_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.CardView style="@style/bg_cardview">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_cat1"
+                style="@style/newhome_horizontal_list"
+                tools:listitem="@layout/item_main_category" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView style="@style/bg_cardview">
+
+            <LinearLayout
+                android:id="@+id/view_top_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_top_products"
+                    style="@style/list_header"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:text="@string/top_products"
+                    android:textSize="@dimen/dimens_12sp" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_top_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                    tools:listitem="@layout/partial_product_list_item" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_top_products_view_all"
+                    style="@style/list_botom_header_style"
+                    android:text="@string/view_all" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sub_cat2"
+            style="@style/newhome_horizontal_list"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            tools:listitem="@layout/item_banner_image1" />
+
+        <android.support.v7.widget.CardView style="@style/bg_cardview">
+
+            <LinearLayout
+                android:id="@+id/layout_shopByBrands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/list_header"
+                    android:text="@string/shop_by_brands"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_shopByBrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                    tools:listitem="@layout/partial_product_list_item" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_banner_10_view_all"
+                    style="@style/list_botom_header_style"
+                    android:text="@string/view_all" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</com.yesspree.app.customviews.MultiStateView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_view_cashback_offer"
+    style="@style/offer_screen_cardview_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_2"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:layout_marginTop="@dimen/dimens_5"
+        android:paddingLeft="@dimen/dimens_5"
+        android:paddingRight="@dimen/dimens_5">
+
+        <TextView
+            android:id="@+id/ic_notification_icon"
+            android:layout_width="@dimen/dimens_30"
+            android:layout_height="@dimen/dimens_30"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="Y"
+            android:textSize="@dimen/dimens_20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/detail_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_toRightOf="@+id/ic_notification_icon"
+            android:gravity="left|center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_header_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="@dimen/dimens_5"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:lineSpacingExtra="@dimen/dimens_2sp"
+                android:lines="2"
+                android:text="Flat 50% OFF for Chakki Whole Wheat Atta"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimens_10sp" />
+
+            <TextView
+                android:id="@+id/tv_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_5"
+                android:fontFamily="@font/open_sans_regular"
+                android:lineSpacingExtra="@dimen/dimens_4sp"
+                android:lines="2"
+                android:text="Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
+when an unknown printer took a galley."
+                android:textColor="@color/colore666666"
+                android:textSize="@dimen/dimens_8sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_notification_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:paddingTop="@dimen/dimens_1"
+            android:text="ago"
+            android:textColor="@color/colorc7c7c7"
+            android:textSize="@dimen/dimens_8sp"
+
+            />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_more"
+            android:layout_width="@dimen/dimens_15"
+            android:layout_height="@dimen/dimens_15"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dimens_5"
+            android:background="@drawable/bg_white_drwble"
+            android:fitsSystemWindows="true"
+            android:paddingTop="@dimen/dimens_1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_expand_more_down" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_120"
+            android:layout_below="@+id/detail_control"
+            android:layout_marginBottom="@dimen/dimens_5"
+            android:layout_marginLeft="@dimen/dimens_5"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:background="@drawable/bg_white_drwble"
+            android:fitsSystemWindows="true"
+            android:visibility="gone"
+            app:srcCompat="@drawable/dummy_product" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

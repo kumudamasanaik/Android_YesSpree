@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_quetion_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:lineSpacingExtra="@dimen/dimens_5sp"
+        android:padding="@dimen/dimens_10"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/dimens_11sp"
+        tools:text="How can I make payment at Yesspree? " />
+
+    <TextView
+        android:id="@+id/tv_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_regular"
+        android:lineSpacingExtra="@dimen/dimens_6sp"
+        android:padding="@dimen/dimens_10"
+        android:lines="5"
+        android:textColor="@color/person_prefix"
+        android:textSize="@dimen/dimens_10sp"
+        tools:text="Yesspree accepts multiple modes of payment. You can make online payments using credit cards, debit cards, netbanking, PayTM, PayU Money and Mobikwik Wallet. Cash on delivery (COD) is also available for orders less than Rs. 5000." />
+</LinearLayout>

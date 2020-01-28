@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yesspree.app.screens.product_cat.ProductLastCatActivity">
+
+
+    <include
+        android:id="@+id/view_itm_swipable"
+        layout="@layout/item_banner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_5" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cat1"
+        style="@style/home_horizontal_list"
+        android:layout_margin="@dimen/dimens_5"
+        tools:listitem="@layout/item_banner_image2" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cat2"
+        style="@style/home_horizontal_list"
+        android:layout_margin="@dimen/dimens_5"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_banner_image2" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_main_cat3"
+        style="@style/home_horizontal_list"
+        android:layout_margin="@dimen/dimens_5"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_main_category" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cat4"
+        style="@style/home_horizontal_list"
+        android:layout_margin="@dimen/dimens_5"
+        tools:listitem="@layout/item_banner_image2" />
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/list_type"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="@string/shop_by_brands"
+        android:textSize="@dimen/dimens_12sp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_shopByBrand"
+        style="@style/home_horizontal_list"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        tools:listitem="@layout/partial_product_list_item" />
+
+
+</LinearLayout>

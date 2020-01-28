@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:elevation="@dimen/dimens_5"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="@dimen/dimens_5"
+        app:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_10">
+
+
+            <TextView
+                android:id="@+id/tv_rate_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dimens_4sp"
+                android:padding="@dimen/dimens_5"
+                android:text="@string/rate_us"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimens_13sp" />
+
+            <TextView
+                android:id="@+id/tv_ratus_query"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rate_us"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/open_sans_regular"
+                android:lineSpacingExtra="@dimen/dimens_5sp"
+                android:padding="@dimen/dimens_5"
+                android:text="@string/rate_us_query"
+                android:textColor="@color/person_prefix"
+                android:textSize="@dimen/dimens_11sp" />
+
+            <View
+                android:id="@+id/view_separtor_top"
+                style="@style/view_separator_style"
+                android:layout_below="@+id/tv_ratus_query"
+                android:layout_marginTop="@dimen/dimens_5" />
+
+
+            <LinearLayout
+                android:id="@+id/subscribe_view_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_separtor_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimens_2"
+                android:layout_marginRight="@dimen/dimens_2"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dimens_5">
+
+                    <!-- TODO: Remove or change this placeholder image -->
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_happy"
+                        style="@style/subscribe_img_style"
+                        app:srcCompat="@drawable/ic_happy" />
+
+                    <TextView
+                        style="@style/rate_us_normal_text_style"
+                        android:layout_below="@+id/iv_happy"
+                        android:text="@string/happy" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/dimens_5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dimens_5">
+
+                    <!-- TODO: Remove or change this placeholder image -->
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_good"
+                        style="@style/subscribe_img_style"
+                        app:srcCompat="@drawable/ic_good" />
+
+                    <TextView
+                        style="@style/rate_us_normal_text_style"
+                        android:layout_below="@+id/iv_good"
+                        android:text="@string/good" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/dimens_5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dimens_5">
+
+                    <!-- TODO: Remove or change this placeholder image -->
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_not_good"
+                        style="@style/subscribe_img_style"
+                        app:srcCompat="@drawable/ic_not_good" />
+
+                    <TextView
+                        style="@style/rate_us_normal_text_style"
+                        android:layout_below="@+id/iv_not_good"
+                        android:text="@string/not_good" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view_separtor_botom"
+                style="@style/view_separator_style"
+                android:layout_below="@+id/subscribe_view_control"
+                android:layout_marginTop="@dimen/dimens_5" />
+
+
+            <TextView
+                android:id="@+id/tv_feedback_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_separtor_botom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dimens_6sp"
+                android:padding="@dimen/dimens_5"
+                android:text="@string/feedback"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimens_10sp" />
+
+
+            <LinearLayout
+                android:id="@+id/_view_comment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_80"
+                android:layout_below="@+id/tv_feedback_header"
+
+                android:layout_marginLeft="@dimen/dimens_5"
+                android:layout_marginRight="@dimen/dimens_5"
+                android:background="@drawable/btn_grey_rect_outline">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/ev_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/cardview_light_background"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:gravity="left"
+                    android:hint="@string/comment_query_hint"
+                    android:maxLines="4"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/person_prefix"
+                    android:textColorHint="@color/person_prefix"
+                    android:textSize="@dimen/dimens_10sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_submit"
+                style="@style/btn_check_out_style"
+                android:layout_below="@+id/_view_comment"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/dimens_20"
+                android:layout_marginLeft="@dimen/dimens_5"
+                android:layout_marginRight="@dimen/dimens_5"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textAllCaps="true" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:orientation="vertical"
+        tools:context="com.yesspree.app.screens.banner_offersdetail.BannerBannerOffersDetailsActivity">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_offers"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_200"
+            android:layout_margin="@dimen/dimens_5"
+            android:alpha=".8"
+            android:background="@color/pickup"
+            android:fitsSystemWindows="true"
+            app:srcCompat="@drawable/dummy_product" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimens_10"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_offer_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:gravity="left|center"
+                android:lineSpacingExtra="@dimen/dimens_5sp"
+                android:padding="@dimen/dimens_5"
+                android:text="@string/offer_details"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimens_11sp" />
+
+
+            <TextView
+                android:id="@+id/tv_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_regular"
+                android:gravity="left|center"
+                android:lineSpacingExtra="@dimen/dimens_6sp"
+                android:padding="@dimen/dimens_5"
+                android:text="I hate peeping Toms. For one thing they usually step all over the hedges and plants on the side of someone’s house killing them and setting back the vegetation’s gardener countless time and effort. Another thing that I don’t really like about them is that they’re such sideline actors, lacking the abilities to participate actively, that I just can’t offer them any respect, whatsoever. Finally, I hate peeping Toms because of the very nature of their field. What is that nature? Its one of intrusiveness."
+                android:textColor="@color/person_prefix"
+                android:textSize="@dimen/dimens_10sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimens_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left|center"
+                android:lineSpacingExtra="@dimen/dimens_4sp"
+                android:padding="@dimen/dimens_5"
+                android:text="@string/terms_condition"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimens_11sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_terms_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

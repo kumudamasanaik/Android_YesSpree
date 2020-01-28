@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/product_discount_price_style"
+
+  >
+
+    <TextView
+        android:id="@+id/product_original_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimens_16sp"
+        android:ellipsize="end"
+        android:text="@string/product_original_price_text"
+        android:textColor="@color/colorea4f4f" />
+
+
+    <View
+        android:layout_width="@dimen/dimens_50"
+        android:layout_height="1dp"
+        android:layout_gravity="left|center"
+        android:layout_marginTop="@dimen/dimens_1"
+        android:background="@color/cardview_dark_background"
+        android:paddingTop="@dimen/dimens_3"
+
+        />
+
+
+</FrameLayout>

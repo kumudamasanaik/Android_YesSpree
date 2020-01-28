@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimens_100"
+    android:layout_height="@dimen/dimens_30"
+    android:layout_gravity="center_horizontal"
+
+    android:background="@color/yellow"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_addbtnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/tv_add_qty_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/dimens_10"
+            android:paddingRight="@dimen/dimens_5"
+            android:text="@string/product_item_add"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dimens_12sp"
+            android:visibility="visible" />
+
+
+        <View
+            android:id="@+id/view_seperator1"
+            style="@style/product_weight_view_separator_style"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tv_quant_increase_when_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_regular"
+            android:gravity="center_horizontal"
+            android:text=" + "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dimens_18sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_quantityView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_2"
+        android:gravity="center"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_count_decrease"
+            android:layout_width="@dimen/dimens_20"
+            android:layout_height="@dimen/dimens_20"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimens_5"
+            android:background="@drawable/ic_remove"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_regular"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tv_quantitycount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimens_2"
+            android:layout_marginRight="@dimen/dimens_2"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_regular"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dimens_2"
+            android:text="0"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dimens_15sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_quant_increase"
+            android:layout_width="@dimen/dimens_20"
+            android:layout_height="@dimen/dimens_20"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dimens_5"
+            android:background="@drawable/ic_addition"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_regular"
+
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+

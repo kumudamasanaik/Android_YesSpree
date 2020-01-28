@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/view_header_delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dimens_1">
+
+
+        <TextView
+            android:id="@+id/tv_delivery_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimens_8"
+            android:lineSpacingExtra="@dimen/dimens_5sp"
+            android:padding="@dimen/dimens_5"
+            android:textColor="@color/colorfafafa"
+            android:textSize="@dimen/dimens_12sp"
+            tools:text="@string/delivery_address" />
+
+        <TextView
+            android:id="@+id/view_modify_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dimens_20"
+            android:text="..."
+            android:textColor="@color/person_prefix"
+            android:textSize="@dimen/dimens_15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/view_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_header_delivery_address"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_1">
+
+
+        <TextView
+            android:id="@+id/tv_addressType"
+            style="@style/order_confirmation_normal_text_style"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/dimens_12sp"
+            tools:text="Home" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/order_confirmation_normal_text_style"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/dimens_12sp"
+            tools:text="@string/Name" />
+
+
+        <TextView
+            android:id="@+id/tv_Addressname"
+            style="@style/order_confirmation_normal_text_style"
+            tools:text="@string/address" />
+
+
+        <TextView
+            android:id="@+id/tv_locality"
+            style="@style/order_confirmation_normal_text_style"
+            tools:text="@string/locality" />
+
+
+        <TextView
+            android:id="@+id/tv_city_name"
+            style="@style/order_confirmation_normal_text_style"
+            tools:text="@string/city" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

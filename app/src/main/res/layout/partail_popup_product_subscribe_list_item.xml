@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/view_separtor_top"
+        style="@style/view_separator_style"
+        android:layout_below="@+id/product_name"
+        android:layout_marginBottom="@dimen/dimens_1"
+        android:layout_marginTop="@dimen/dimens_1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimens_2">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_product"
+            style="@style/product_image_style"
+            android:layout_width="@dimen/dimens_75"
+            android:layout_height="@dimen/dimens_75"
+            android:layout_marginTop="@dimen/dimens_5" />
+
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_15"
+            android:layout_toRightOf="@+id/image_product"
+            android:fontFamily="@font/open_sans_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimens_4sp"
+            android:padding="@dimen/dimens_3"
+            android:text="@string/get_once_at"
+            android:textColor="@color/colore666666"
+            android:textSize="@dimen/dimens_12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_header"
+            android:layout_toRightOf="@+id/image_product"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:lineSpacingExtra="0sp"
+            android:padding="@dimen/dimens_5"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dimens_12sp"
+            tools:text="₹18" />
+
+
+        <TextView
+            android:id="@+id/tv_saved_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_price"
+            android:layout_toRightOf="@+id/image_product"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:lineSpacingExtra="@dimen/dimens_4sp"
+            android:padding="@dimen/dimens_5"
+            android:textColor="#0d9f67"
+            android:textSize="@dimen/dimens_12sp"
+            tools:text="Save ₹54 more " />
+
+
+        <TextView
+            android:id="@+id/tv_getonce"
+            android:layout_width="@dimen/dimens_65"
+            android:layout_height="@dimen/dimens_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dimens_10"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimens_5sp"
+            android:text="@string/subscribe"
+            android:textColor="@color/app_text_white"
+            android:textSize="@dimen/dimens_11sp"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view_separtor_botom"
+        style="@style/view_separator_style"
+        android:layout_below="@+id/product_name"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:layout_marginTop="@dimen/dimens_5" />
+
+
+</LinearLayout>
+
+
+

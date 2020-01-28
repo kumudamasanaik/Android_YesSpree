@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/view_itm_swipable"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_165"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_banner_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/main_banner_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/minus_dimens_10"
+            app:centered="true"
+            app:fillColor="@color/yellow"
+            app:pageColor="@color/app_text_white"
+            app:snap="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/swiping_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_300"
+        android:layout_below="@+id/view_itm_swipable"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            style="@style/customTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_40"
+            android:background="@drawable/bg_tab_selector"
+            android:elevation="@dimen/dimens_2"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorHeight="@dimen/dimens_3"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@color/person_prefix" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/filter_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cat1"
+        style="@style/home_horizontal_list"
+        android:layout_below="@+id/swiping_tab"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:layout_marginTop="@dimen/dimens_5"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_main_category" />
+
+
+    <LinearLayout
+        android:id="@+id/view_top_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rv_cat1"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_top_products"
+            style="@style/list_type"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:text="@string/top_products"
+            android:textSize="@dimen/dimens_12sp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_top_products"
+            style="@style/home_horizontal_list"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            tools:listitem="@layout/partial_product_list_item" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/view_all"
+            android:text="@string/view_all" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sub_cat2"
+        style="@style/home_horizontal_list"
+        android:layout_below="@+id/view_top_products"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        tools:listitem="@layout/item_banner_image1" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_banner_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rv_sub_cat2"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/list_type"
+            android:text="@string/shop_by_brands"
+            android:textSize="@dimen/dimens_12sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_shopByBrand"
+            style="@style/home_horizontal_list"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            tools:listitem="@layout/partial_product_list_item" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_banner_10_view_all"
+            style="@style/view_all"
+            android:text="@string/view_all" />
+    </LinearLayout>
+
+
+</RelativeLayout>

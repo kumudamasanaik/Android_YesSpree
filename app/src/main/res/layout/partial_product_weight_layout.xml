@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weigh_control"
+    android:layout_width="@dimen/dimens_125"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_black_border">
+
+
+    <TextView
+        android:id="@+id/tv_sku"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/dimens_2"
+        android:paddingRight="@dimen/dimens_2"
+        android:fontFamily="@font/open_sans_regular"
+        android:gravity="center"
+        android:text="@string/product_item_weight"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/dimens_9sp" />
+
+
+    <View
+        android:id="@+id/view_seperator1"
+        style="@style/product_weight_view_separator_style" />
+
+
+    <TextView
+        android:id="@+id/tv_changewiehgt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimens_20"
+        android:layout_gravity="center"
+        android:layout_weight=".5"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/dimens_5"
+        android:background="@drawable/ic_expand_more_down"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/dimens_18sp" />
+
+</LinearLayout>

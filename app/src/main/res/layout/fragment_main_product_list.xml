@@ -1,0 +1,190 @@
+<com.yesspree.app.customviews.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multistateview"
+    style="@style/MultiStateViewStyle"
+    android:background="@color/app_bg"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/view_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_40"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_availiable_products"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_regular"
+                android:lineSpacingExtra="@dimen/dimens_2sp"
+                android:padding="@dimen/dimens_10"
+                android:text="Grocery - 180 Products"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimens_10sp" />
+
+
+            <TextView
+                android:id="@+id/tv_filterg_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginStart="@dimen/dimens_10"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_filter"
+                android:drawablePadding="@dimen/dimens_15"
+                android:drawableStart="@drawable/ic_filter"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:gravity="left|center"
+                android:lineSpacingExtra="@dimen/dimens_2sp"
+                android:padding="@dimen/dimens_10"
+                android:text="@string/filter"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimens_10sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/view_trending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_header"
+            android:layout_marginLeft="@dimen/dimens_2"
+            android:layout_marginRight="@dimen/dimens_2"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_trending_header"
+                android:layout_width="@dimen/dimens_97"
+                android:layout_height="@dimen/dimens_105"
+                android:background="@color/yellow"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:gravity="center"
+                android:padding="@dimen/dimens_10"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimens_12sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_trending"
+                style="@style/home_horizontal_list"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_main_category" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/view_best_prices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_trending"
+            android:layout_marginLeft="@dimen/dimens_2"
+            android:layout_marginRight="@dimen/dimens_2"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/tv_pricing_header"
+                android:layout_width="@dimen/dimens_97"
+                android:layout_height="@dimen/dimens_105"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:gravity="center"
+                android:padding="@dimen/dimens_10"
+                android:textAllCaps="true"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_bestprices"
+                style="@style/home_horizontal_list"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_main_category" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/partial_explore_view"
+            android:id="@+id/view_transparent_image_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_best_prices"
+            />
+
+        <LinearLayout
+            android:id="@+id/view_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_transparent_image_control"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                style="@style/customTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_40"
+                android:background="@drawable/bg_tab_selector"
+                android:elevation="@dimen/dimens_2"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabIndicatorHeight="@dimen/dimens_3"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/colorPrimary"
+                app:tabTextColor="@color/person_prefix" />
+
+
+            <com.yesspree.app.customviews.MyViewPager
+                android:id="@+id/filter_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userlike_products_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_viewpager"
+            android:layout_marginBottom="@dimen/dimens_2"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:visibility="visible">
+
+            <include
+                layout="@layout/partial_user_like_product_item_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimens_10"
+
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</com.yesspree.app.customviews.MultiStateView>
+
+
+
+

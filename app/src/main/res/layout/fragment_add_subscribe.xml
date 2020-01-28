@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nested_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/subscribe_view_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dimens_5"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dimens_5">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/subscibe_shcedule"
+                    style="@style/subscribe_img_style"
+                    app:srcCompat="@drawable/ic_schedule" />
+
+                <TextView
+                    style="@style/subscribe_normal_text_style"
+                    android:layout_below="@+id/subscibe_shcedule"
+                    android:text="@string/subscribe_schedule"
+                    android:textSize="@dimen/dimens_10sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dimens_5"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dimens_5">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/subscibe_subscribe"
+                    style="@style/subscribe_img_style"
+                    app:srcCompat="@drawable/ic_subscribe" />
+
+                <TextView
+                    style="@style/subscribe_normal_text_style"
+                    android:layout_below="@+id/subscibe_subscribe"
+                    android:text="@string/subscribe" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dimens_5"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dimens_5">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/subscibe_save_more"
+                    style="@style/subscribe_img_style"
+                    app:srcCompat="@drawable/ic_save_more" />
+
+                <TextView
+                    style="@style/subscribe_normal_text_style"
+                    android:layout_below="@+id/subscibe_save_more"
+                    android:text="@string/subscribe_save_more"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_seperator"
+            style="@style/view_separator_style"
+            android:layout_below="@+id/subscribe_view_control" />
+
+        <TextView
+            android:id="@+id/tv_days_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_seperator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimens_4sp"
+            android:padding="@dimen/dimens_5"
+            android:text="Choose Days"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/dimens_12sp" />
+
+
+        <!--<include
+            android:id="@+id/view_weeklist"
+            layout="@layout/partial_subscribe_week_list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_days_header" />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_weeklist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_days_header"
+            android:layout_marginLeft="@dimen/dimens_16"
+            android:layout_marginRight="@dimen/dimens_16"
+            tools:itemCount="7"
+            tools:listitem="@layout/item_week_day"
+            tools:orientation="horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <RadioGroup
+            android:id="@+id/rdbg_weekdays_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv_weeklist"
+            android:layout_marginLeft="@dimen/dimens_10"
+            android:layout_marginRight="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rdbt_everyday"
+                style="@style/person_cbk"
+                android:layout_weight="1"
+                android:text="@string/every_day" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rdbt_alternate_days"
+                style="@style/person_cbk"
+                android:layout_weight="1"
+                android:text="@string/alternate_days" />
+
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rdbt_once_week"
+                style="@style/person_cbk"
+                android:layout_weight="1"
+                android:text="@string/once_week" />
+
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="@dimen/dimens_150"
+            android:layout_height="@dimen/dimens_40"
+            android:layout_below="@+id/rdbg_weekdays_control"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:background="@drawable/bg_black_border"
+            android:drawableLeft="@drawable/ic_subscribe_calendar"
+            android:drawablePadding="@dimen/dimens_6sp"
+            android:fontFamily="@font/open_sans_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimens_6sp"
+            android:padding="@dimen/dimens_8"
+            android:text="Sun, 25 Mar 2018"
+            android:textColor="@color/colore666666"
+            android:textSize="@dimen/dimens_10sp" />
+
+
+        <TextView
+            android:id="@+id/tv_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimens_4sp"
+            android:text="Starting Date"
+            android:textColor="@color/person_prefix"
+            android:textSize="@dimen/dimens_12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            style="@style/btn_check_out_style"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/confirm" />
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

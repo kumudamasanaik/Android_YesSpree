@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimens_5">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_logo_icon"
+            style="@style/login_logo_style"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:padding="@dimen/dimens_5"
+            android:src="@drawable/logo_light_bg" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_delivery_location_icon"
+            style="@style/delivery_location_icon_style"
+            android:layout_below="@+id/iv_logo_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:padding="@dimen/dimens_5"
+            app:srcCompat="@drawable/ic_delivery_location" />
+
+
+        <TextView
+            android:id="@+id/tv_delivery_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_delivery_location_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dimens_15sp"
+            tools:text="@string/delievery_location" />
+
+
+        <TextView
+            android:id="@+id/tv_delivery_location_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_delivery_location"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:fontFamily="@font/open_sans_regular"
+            android:lineSpacingExtra="@dimen/dimens_8"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dimens_12sp"
+            android:textStyle="bold"
+            tools:text="@string/delievery_location_selection" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_use_my_loc"
+            android:layout_width="@dimen/dimens_300"
+            android:layout_height="@dimen/dimens_50"
+            android:layout_below="@+id/tv_delivery_location_selection"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:onClick="fetchAddressButtonHandler">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableLeft="@drawable/ic_choose_location"
+                android:drawablePadding="@dimen/dimens_20"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dimens_4sp"
+                android:textAllCaps="true"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/dimens_12sp"
+                android:text="@string/use_my_location" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_set_loc_manually"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_use_my_loc"
+            android:layout_marginBottom="@dimen/dimens_20"
+            android:layout_marginTop="@dimen/dimens_15"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="@dimen/dimens_4sp"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/dimens_12sp"
+            android:text="@string/set_location_manually" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

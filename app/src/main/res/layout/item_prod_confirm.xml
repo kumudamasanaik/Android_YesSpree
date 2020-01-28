@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_product"
+        style="@style/product_image_style"
+        android:layout_marginRight="@dimen/dimens_10"
+        android:layout_marginTop="@dimen/dimens_5"
+        android:background="@drawable/bg_white_drwble" />
+
+
+    <TextView
+        android:id="@+id/product_name"
+        style="@style/product_name__style"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:layout_toLeftOf="@+id/image_wishlist"
+        android:layout_toRightOf="@+id/image_product" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_wishlist"
+        style="@style/product_wishlist_icon_style"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/product_name" />
+
+    <TextView
+        android:id="@+id/product_discount_price"
+        style="@style/product_discount_price_style"
+        android:layout_above="@+id/product_saved_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:layout_marginLeft="@dimen/dimens_10"
+        android:layout_marginRight="@dimen/dimens_10"
+        android:layout_toEndOf="@+id/weigh_control"
+        android:layout_toRightOf="@+id/weigh_control"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimens_2" />
+
+    <TextView
+        android:id="@+id/weigh_control"
+        android:layout_width="@dimen/dimens_70"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/product_saved_price"
+        android:layout_alignBaseline="@+id/product_discount_price"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:layout_toRightOf="@+id/image_product"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular"
+        android:gravity="center"
+        android:text="@string/product_item_weight"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/dimens_9sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/product_original_price"
+        style="@style/product_original_price__style"
+        android:layout_above="@+id/product_saved_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:layout_toEndOf="@+id/product_discount_price"
+        android:layout_toRightOf="@+id/product_discount_price"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimens_2" />
+
+
+    <include
+        layout="@layout/partial_product_quantity_control_layout"
+        android:layout_width="@dimen/dimens_100"
+        android:layout_height="@dimen/dimens_30"
+        android:layout_alignTop="@+id/product_saved_price"
+        android:layout_marginLeft="@dimen/dimens_5"
+        android:layout_toRightOf="@+id/product_saved_price" />
+
+
+    <TextView
+        android:id="@+id/product_saved_price"
+        style="@style/product_saved_price_style"
+        android:layout_below="@+id/image_product"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:layout_toEndOf="@+id/image_product"
+        android:layout_toRightOf="@+id/image_product" />
+
+</RelativeLayout>

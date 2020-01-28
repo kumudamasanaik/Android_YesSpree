@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_30"
+            android:layout_marginRight="@dimen/dimens_30"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_logo_icon"
+                style="@style/login_logo_style"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimens_5"
+                android:src="@drawable/logo_light_bg" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_email_or_mob"
+                style="@style/login_edit_text"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:hint="@string/email_or_mobile_no" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_pass"
+                style="@style/login_edit_text"
+                android:inputType="textPassword"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:hint="@string/password" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_sign"
+                style="@style/sign_up_btn"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:text="@string/sign_in" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_forgo_pass"
+                style="@style/simp_btn_no_bg"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:text="@string/forgot_password" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:orientation="horizontal">
+
+                <View
+                    style="@style/view_divider"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="@dimen/dimens_48"
+                    android:layout_height="@dimen/dimens_48"
+                    android:layout_marginLeft="@dimen/dimens_5"
+                    android:layout_marginRight="@dimen/dimens_5"
+                    android:background="@drawable/yellow_filled_circle"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <View
+                    style="@style/view_divider"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_gmail_sigh_up"
+                style="@style/social_sign_up_btn"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:background="@color/ornage_gmail_login_bg"
+                android:text="@string/sign_in_with_google" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_fb_sigh_up"
+                style="@style/social_sign_up_btn"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:background="@color/indigo_fb_login_bg"
+                android:text="@string/sign_in_with_fb"
+                android:textColor="@color/md_white_1000" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dont_have_acc"
+            style="@style/already_sign_signup_text"
+            android:text="@string/you_dont_have_acc" />
+    </LinearLayout>
+</RelativeLayout>

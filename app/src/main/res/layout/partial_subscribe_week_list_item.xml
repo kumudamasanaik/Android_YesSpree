@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yesspree.app.customviews.HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_5">
+
+        <FrameLayout
+            android:id="@+id/view_mondy"
+            style="@style/subscribe_week_days_style">
+
+            <TextView
+                style="@style/subscribe_weekdays_text_style"
+                android:text="@string/Mon" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/view_tue"
+            style="@style/subscribe_week_days_style"
+            android:layout_toRightOf="@+id/view_mondy">
+
+            <TextView
+                style="@style/subscribe_weekdays_text_style"
+                android:text="@string/Tue" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/view_wed"
+            style="@style/subscribe_week_days_style"
+            android:layout_toRightOf="@+id/view_tue">
+
+            <TextView
+                style="@style/subscribe_weekdays_text_style"
+                android:text="@string/Wed"
+
+                />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/view_thurs"
+            style="@style/subscribe_week_days_style"
+            android:layout_toRightOf="@+id/view_wed">
+
+            <TextView
+                style="@style/subscribe_weekdays_text_style"
+                android:text="@string/Thu" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/view_Frdy"
+            style="@style/subscribe_week_days_style"
+            android:layout_toRightOf="@+id/view_thurs">
+
+            <TextView
+                style="@style/subscribe_weekdays_text_style"
+                android:text="@string/Fri" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/view_strdy"
+            style="@style/subscribe_week_days_style"
+            android:layout_toRightOf="@+id/view_Frdy">
+
+            <TextView
+                style="@style/subscribe_weekdays_text_style"
+                android:text="@string/Sat" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/view_sunday"
+            style="@style/subscribe_week_days_style"
+            android:layout_toRightOf="@+id/view_strdy">
+
+            <TextView
+                style="@style/subscribe_weekdays_text_style"
+                android:text="@string/Sun" />
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</com.yesspree.app.customviews.HorizontalScrollView>

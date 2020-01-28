@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_view_cashback_offer"
+    style="@style/offer_screen_cardview_style"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_230"
+    android:layout_margin="@dimen/dimens_2"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimens_5"
+        android:paddingRight="@dimen/dimens_5">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/bullet_icon"
+                android:layout_width="@dimen/dimens_6"
+                android:layout_height="@dimen/dimens_6"
+                android:background="@drawable/ic_bullet_icon" />
+
+
+            <TextView
+                android:id="@+id/tv_header_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_5"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:lineSpacingExtra="@dimen/dimens_2sp"
+                android:padding="@dimen/dimens_5"
+                android:text="Flat 50% OFF for Chakki Whole Wheat Atta"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimens_10sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_5"
+            android:fontFamily="@font/open_sans_regular"
+            android:lineSpacingExtra="@dimen/dimens_4sp"
+            android:lines="2"
+            android:paddingBottom="@dimen/dimens_5"
+            android:paddingLeft="@dimen/dimens_7"
+            android:paddingRight="@dimen/dimens_5"
+            android:text="Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
+when an unknown printer took a galley."
+            android:textColor="@color/colore666666"
+            android:textSize="@dimen/dimens_8sp" />
+
+
+        <TextView
+            android:id="@+id/tv_notification_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_5"
+            android:lineSpacingExtra="0sp"
+            android:paddingBottom="@dimen/dimens_5"
+            android:paddingLeft="@dimen/dimens_7"
+            android:paddingRight="@dimen/dimens_5"
+            android:paddingTop="@dimen/dimens_5"
+            android:text="an hour ago"
+            android:textColor="@color/app_text_div"
+            android:textSize="@dimen/dimens_8sp" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_120"
+            android:layout_marginLeft="@dimen/dimens_5"
+            android:background="@drawable/bg_white_drwble"
+            android:fitsSystemWindows="true"
+            app:srcCompat="@drawable/dummy_product" />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+
+

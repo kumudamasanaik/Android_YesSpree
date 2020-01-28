@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yesspree.app.customviews.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/multistateview"
+    style="@style/MultiStateViewStyle"
+    android:background="@color/app_text_white"
+    android:fitsSystemWindows="true">
+<RelativeLayout
+    android:id="@+id/parent_address_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+   >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_continue"
+      >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/layout_person_prefix"
+                layout="@layout/layout_person_prefix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_15" />
+
+            <LinearLayout
+                android:id="@+id/layout_add_adrs_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_person_prefix"
+                android:layout_margin="@dimen/dimens_10"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_name"
+                    style="@style/address_edit_text"
+                    android:gravity="start"
+                    android:hint="@string/name" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_flate_house"
+                    style="@style/address_edit_text"
+                    android:gravity="start"
+                    android:hint="@string/flate_house" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_street_name"
+                    style="@style/address_edit_text"
+                    android:hint="@string/street_name" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_village_city"
+                    style="@style/address_edit_text"
+                    android:hint="@string/village_city" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_taluk"
+                    style="@style/address_edit_text"
+                    android:hint="@string/taluka" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_district"
+                    style="@style/address_edit_text"
+                    android:hint="@string/district" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_state"
+                    style="@style/address_edit_text"
+                    android:hint="@string/state" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_pincode"
+                    style="@style/address_edit_text"
+                    android:hint="@string/pincode" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_locality_landmark"
+                    style="@style/address_edit_text"
+                    android:hint="@string/locality_landmark" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_add_adrs_field"
+                android:layout_marginBottom="@dimen/dimens_10"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_add_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/address_type"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_add_type_home"
+                    android:layout_width="@dimen/dimens_110"
+                    android:layout_height="@dimen/dimens_32"
+                    android:layout_marginLeft="@dimen/dimens_10"
+                    android:layout_marginRight="@dimen/dimens_10"
+                    android:layout_weight="2"
+                    android:background="@drawable/yellow_filled_rect"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:gravity="center"
+                    android:text="@string/home"
+                    android:textAlignment="center" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_add_type_office"
+                    android:layout_width="@dimen/dimens_110"
+                    android:layout_height="@dimen/dimens_32"
+                    android:layout_marginLeft="@dimen/dimens_10"
+                    android:layout_weight="2"
+                    android:background="@drawable/btn_grey_rect_outline"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="center"
+                    android:text="@string/office"
+                    android:textAlignment="center"
+                    android:textColor="@color/hint_text_color" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/btn_continue"
+        style="@style/layout_bottom_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:text="@string/continue_text" />
+
+</RelativeLayout>
+</com.yesspree.app.customviews.MultiStateView>

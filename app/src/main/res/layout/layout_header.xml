@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    style="@style/ToolbarStyleHome"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimens_10"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_address_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/title"
+                style="@style/ToolbarTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimens_10"
+                android:textColor="@color/md_white_1000"
+                tools:text="Madiwal" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_city_name"
+                style="@style/menu_city_name"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="@dimen/dimens_25"
+                android:drawablePadding="@dimen/dimens_10"
+                android:drawableRight="@drawable/ic_edit_white"
+                tools:text="Bangalore" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ic_menu_search"
+                android:layout_width="@dimen/dimens_15"
+                android:layout_height="@dimen/dimens_15"
+                android:layout_marginRight="@dimen/dimens_15"
+                app:srcCompat="@drawable/ic_search" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/ic_menu_notification"
+                    android:layout_width="@dimen/dimens_15"
+                    android:layout_height="@dimen/dimens_15"
+                    android:layout_marginRight="@dimen/dimens_15"
+                    android:paddingLeft="@dimen/dimens_2"
+                    android:paddingTop="@dimen/dimens_0"
+                    app:srcCompat="@drawable/ic_notification" />
+
+
+                <TextView
+                    android:id="@+id/tv_notification_count"
+                    android:layout_width="@dimen/dimens_12"
+                    android:layout_height="@dimen/dimens_12"
+                    android:layout_gravity="start|top"
+                    android:layout_marginLeft="@dimen/dimens_9"
+                    android:background="@drawable/ic_cart_count_cir"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimens_1"
+                    android:paddingRight="@dimen/dimens_1"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="@dimen/dimens_7sp"
+                    android:visibility="gone"
+                    tools:text="3" />
+
+
+            </FrameLayout>
+
+
+            <include
+                layout="@layout/men_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

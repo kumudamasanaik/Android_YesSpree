@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_explore_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/dimens_5">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ic_backgrond"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/dimens_90" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_gradient">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_explore_query"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/open_sans_semi_bold"
+                        android:gravity="center"
+                        android:padding="@dimen/dimens_3"
+                        android:text="ffgfdgbgdbhgsdbghsgj"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/dimens_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_explore"
+                        android:layout_width="@dimen/dimens_62"
+                        android:layout_height="@dimen/dimens_30"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_transparent_rect_border"
+                        android:gravity="center"
+                        android:text="@string/explore"
+                        android:visibility="gone"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/dimens_12sp" />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ic_explore_close"
+                android:layout_width="@dimen/dimens_15"
+                android:layout_height="@dimen/dimens_15"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="@dimen/dimens_5"
+                android:layout_marginTop="@dimen/dimens_2"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_close" />
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

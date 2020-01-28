@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yesspree.app.customviews.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multistateview"
+    style="@style/MultiStateViewStyle"
+    android:background="@color/app_bg"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_main_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_5"
+                android:layout_marginRight="@dimen/dimens_5"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_main_category" />
+
+            <!--   -->
+            <!--  <View
+                  style="@style/view_divider"
+                  android:background="@color/app_text_div"
+                  android:visibility="gone" />
+  -->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/subCatRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                tools:listitem="@layout/item_banner_image1" />
+
+            <include
+                android:id="@+id/top_explore_view"
+                layout="@layout/partial_explore_view" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fixed_squarebanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_5"
+                android:layout_marginRight="@dimen/dimens_5"
+                android:orientation="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_banner_image2" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_banner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_banner_image2" />
+
+            <!---->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/botom_explore_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimens_5"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:elevation="@dimen/dimens_5">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_botom_exploreImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimens_90"
+                        android:background="@drawable/banner_img" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_gradient">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_explore_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/open_sans_semi_bold"
+                                android:padding="@dimen/dimens_3"
+                                android:text="Fruits and Vegitables"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="@dimen/dimens_12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_botom_explore_btn"
+                                android:layout_width="@dimen/dimens_60"
+                                android:layout_height="@dimen/dimens_25"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_transparent_rect_border"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:text="@string/explore"
+                                android:textColor="@color/yellow"
+                                android:textSize="@dimen/dimens_11sp" />
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_botom_explore_close"
+                        android:layout_width="@dimen/dimens_15"
+                        android:layout_height="@dimen/dimens_15"
+                        android:layout_gravity="right|top"
+                        android:layout_marginRight="@dimen/dimens_5"
+                        android:layout_marginTop="@dimen/dimens_2"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_close" />
+
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView style="@style/bg_cardview">
+
+                <LinearLayout
+                    android:id="@+id/layout_top_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/list_header"
+                        android:text="@string/top_products"
+                        android:textSize="@dimen/dimens_12sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_topProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                        tools:listitem="@layout/partial_product_list_item" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_top_products"
+                        style="@style/list_botom_header_style"
+                        android:text="@string/view_all" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_banner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_5"
+                android:layout_marginRight="@dimen/dimens_5"
+                android:orientation="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_banner_image2" />
+
+
+            <!--top product below recycler banner grid layout-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_banner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_5"
+                android:layout_marginRight="@dimen/dimens_5"
+                android:orientation="vertical"
+                tools:listitem="@layout/item_banner_image1" />
+
+            <android.support.v7.widget.CardView style="@style/bg_cardview">
+
+                <LinearLayout
+                    android:id="@+id/layout_all_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_product_name"
+                        style="@style/list_header"
+                        android:text="@string/top_grocery_products"
+                        android:textSize="@dimen/dimens_12sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_AllProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                        tools:listitem="@layout/partial_product_list_item" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_all_products"
+                        style="@style/list_botom_header_style"
+                        android:text="@string/view_all" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView style="@style/bg_cardview">
+
+                <LinearLayout
+                    android:id="@+id/layout_shopByBrands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/list_header"
+                        android:text="@string/shop_by_brands"
+                        android:textSize="@dimen/dimens_12sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_banner4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                        tools:listitem="@layout/partial_product_list_item" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_banner_10_view_all"
+                        style="@style/list_botom_header_style"
+                        android:text="@string/view_all" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</com.yesspree.app.customviews.MultiStateView>

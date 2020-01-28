@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha=".70"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/view_botom_userlikes_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:id="@+id/layout_user_recmded_productsView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:alpha=".15"
+                android:background="@color/md_black_1000">
+
+                <TextView
+
+                    android:id="@+id/tv_userLikeProducts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginRight="-50dp"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:gravity="center"
+                    android:rotation="270"
+                    android:text="@string/you_may_also_like"
+                    android:textAllCaps="true"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="@dimen/dimens_13sp" />
+
+
+            </FrameLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_userlike_products"
+                style="@style/home_horizontal_list"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/partial_user_like_products_list_items" />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

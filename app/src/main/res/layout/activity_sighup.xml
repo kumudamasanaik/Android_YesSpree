@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.signup.SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_log"
+            style="@style/logo_pic"
+            android:layout_marginLeft="@dimen/dimens_60"
+            android:layout_marginRight="@dimen/dimens_60"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:src="@drawable/logo_light_bg" />
+
+        <include
+            android:id="@+id/layout_person_prefix"
+            layout="@layout/layout_person_prefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_log"
+            android:layout_marginLeft="@dimen/dimens_25"
+            android:layout_marginRight="@dimen/dimens_25"
+            android:layout_marginTop="@dimen/dimens_5" />
+
+        <LinearLayout
+            android:id="@+id/layout_sign_up_detials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_person_prefix"
+            android:layout_marginLeft="@dimen/dimens_25"
+            android:layout_marginRight="@dimen/dimens_25"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_first_name"
+                style="@style/sign_up_edit_text"
+                android:hint="@string/first_name" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_last_name"
+                style="@style/sign_up_edit_text"
+                android:hint="@string/last_name" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_email_id"
+                style="@style/sign_up_edit_text"
+                android:hint="@string/email_id" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_mobile_num"
+                style="@style/sign_up_edit_text"
+                android:hint="@string/mobile_no"
+                android:inputType="phone" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_password"
+                style="@style/sign_up_edit_text"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_conf_pass"
+                style="@style/sign_up_edit_text"
+                android:hint="@string/conf_password"
+                android:inputType="textPassword" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_referal_code"
+                style="@style/sign_up_edit_text"
+                android:hint="@string/referal_code_opt"
+                android:imeOptions="actionDone" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_sign_up"
+                style="@style/sign_up_btn"
+                android:text="@string/sign_up" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_already_had_acc"
+            style="@style/already_sign_signup_text"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/layout_sign_up_detials"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:text="@string/you_are_already_sign" />
+    </RelativeLayout>
+</ScrollView>

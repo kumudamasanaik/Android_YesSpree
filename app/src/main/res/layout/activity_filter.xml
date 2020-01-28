@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yesspree.app.customviews.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/multistateview"
+    style="@style/MultiStateViewStyle"
+    android:background="@color/app_text_white"
+    android:fitsSystemWindows="true">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/partail_swiping_tab_layout" />
+
+
+</com.yesspree.app.customviews.MultiStateView>

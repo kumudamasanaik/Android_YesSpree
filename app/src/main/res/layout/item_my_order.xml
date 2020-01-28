@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_placed_on_text"
+            style="@style/order_list_item_text"
+            android:text="@string/placed_on"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+             />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_placed_on_date"
+            style="@style/order_item_text_val"
+            android:text="31-March-2018"
+            android:layout_alignBaseline="@+id/tv_placed_on_text"
+            android:layout_marginLeft="@dimen/dimens_5"
+            android:layout_toRightOf="@+id/tv_placed_on_text"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_order_id_text"
+                style="@style/order_list_item_text"
+                android:text="@string/order_id"
+                android:layout_alignBaseline="@+id/tv_order_id"
+                android:layout_toLeftOf="@+id/tv_order_id"
+                 />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_order_id"
+                style="@style/order_item_text_val"
+                android:text="65321405470"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens_20"
+        android:layout_marginTop="@dimen/dimens_15">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_prod"
+            android:layout_width="@dimen/dimens_64"
+            android:layout_height="@dimen/dimens_64"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:srcCompat="@drawable/dummy_product" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_prod_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_toRightOf="@+id/iv_prod"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:maxLength="35"
+            android:maxLines="1"
+            android:text="Aashirvaad Whole Wheat Atta - 100% Pure"
+            android:textColor="@color/app_text_black"
+            android:textSize="@dimen/dimens_11sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_prod_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_go_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_prod_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_prod_name"
+            android:layout_marginLeft="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_toRightOf="@+id/iv_prod"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:maxLines="1"
+            android:text="10 kg"
+            android:textSize="@dimen/dimens_11sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_prod_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_prod_unit"
+            android:layout_marginLeft="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_toRightOf="@+id/iv_prod"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:maxLines="1"
+            android:text="Quantity : 3"
+            android:textColor="@color/colore666666"
+            android:textSize="@dimen/dimens_11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_status_text"
+            style="@style/order_list_item_text"
+            android:text="@string/status"
+            android:textColor="@color/app_text_black"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+             />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_status"
+            style="@style/order_item_text_val"
+            android:layout_alignBaseline="@+id/tv_status_text"
+            android:layout_marginLeft="@dimen/dimens_5"
+            android:layout_toRightOf="@+id/tv_status_text"
+            android:text="31-02-2018"
+            android:textColor="@color/pickup"
+            android:textSize="@dimen/dimens_11sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_est_delivery_text"
+                style="@style/order_list_item_text"
+                android:text="@string/est_del"
+                android:textSize="@dimen/dimens_9sp"
+                android:textColor="@color/app_text_black"
+                android:layout_alignBaseline="@+id/tv_est_delivery"
+                android:layout_toLeftOf="@+id/tv_est_delivery"
+
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_est_delivery"
+                style="@style/order_item_text_val"
+                android:text="31-01-2018"
+                android:textSize="@dimen/dimens_9sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                 />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
